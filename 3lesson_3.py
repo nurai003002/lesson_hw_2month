@@ -83,7 +83,7 @@
 #         return self.__memory
 #     @property
 #     def make_coputations(self):
-#         print(f"сложение: {self.cpu + self.memory}, Делание : {self.cpu / self.memory}")
+#         print(f"сложение: {self.cpu + self.memory}, Деление : {self.cpu / self.memory}")
 #         print(f" Умножение: {self.cpu * self.memory}, Разность: {self.cpu-self.memory}")
 #         return self.__make_coputations
 # result = Computer(35,5,"Результат")
@@ -113,7 +113,7 @@
 # booth.call(1, +996755750238)
 # booth.info()
 
-# # №7,8,9,11
+# # # №7,8,9,11
 # class SmartPhone(Computer,Phone):
 #     def __init__(self, location,cpu, memory, make_coputations,sim_cards_list):
 #         Computer.__init__(self, cpu, memory, make_coputations)
