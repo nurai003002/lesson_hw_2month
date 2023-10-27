@@ -9,7 +9,7 @@ class Money:
         user = int(input("На сколько хотите пополнить баланс: "))
         all1 = balance + user
         print(f"Ваш баланс пополнен на {all1}сом")
-    
+
         print("СНЯТИЕ")
         user_1 = int(input("Сколько хотите снять: "))
         balance = all1 - user_1
@@ -18,3 +18,4 @@ class Money:
 
 
 
+  

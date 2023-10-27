@@ -7,6 +7,7 @@ class Person:
     age = int(input("Ваш возраст: "))
     
     def info(self):
+
         print("Регистрация прошла успешно!")
         print(f"здравствуйте {self.name}, пожалуйста запомните свой пин-код: {pincode}")
         print("Кабинет создан")
