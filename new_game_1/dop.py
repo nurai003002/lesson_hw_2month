@@ -1,5 +1,5 @@
-from abstract import dough1
-dough1()
+# from abstract import dough1
+# dough1()
 def sauce():
         print("ВИДЫ СОУСОВ")
         print("1 - кетчуп, 2 - сырный соус, 3 - соус Ранч, 4 - острый соус")

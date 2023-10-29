@@ -5,7 +5,7 @@ class Person:
     print("Откройте cвой кабинет")
     name = input("Введите ваше Ф.И.: ")
     age = int(input("Ваш возраст: "))
-    
+                                                                                        
     def info(self):
 
         print("Регистрация прошла успешно!")

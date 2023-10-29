@@ -1,4 +1,4 @@
-from hello import registration,hi
+# from hello import registration,hi
 def dough1():
             print("ЭТА ИГРА 'ГОТОВКА ПИЦЦЫ'")
             print("Для начало делаем тесто")
@@ -6,8 +6,8 @@ def dough1():
             if dough == 'тесто':
                 print(f"{dough}, готово")
 
-hi()
-registration()
+# hi()
+# registration()
     
 
    

@@ -11,7 +11,7 @@
 #         self.model = model
 #         self.year = year
 #         self.color = color
-    
+   
 #     def info(self):
 #      print(f"Модель машины = {self.model}, Год выпуска = { self.year}, Цвет машины = {self.color}")
 
@@ -92,7 +92,7 @@
 # cherry.info()
 # banana.info()
     
-# № 2
+# # № 2
 
    
 # class Car:

@@ -38,9 +38,10 @@ class WorkHospital:
 
 
     def work_experience(self, exper):
-        cursor.execute(f""" UPDATE hospital SET experience = experience + {exper} WHERE name = '{self.name}'""")
-        self.experience += exper
-        connect.commit()
+            cursor.execute(f""" UPDATE hospital SET experience = experience + {exper} WHERE name = '{self.name}'""")
+            self.experience += exper
+            connect.commit()
+       
 
     def take(self, salary_all):
         cursor.execute(f""" UPDATE hospital SET salary = salary + {salary_all} WHERE name = '{self.name}'""")
@@ -53,7 +54,7 @@ class WorkHospital:
         connect.commit()
     
 
-   
+  
 
     def main(self):
         while True:
@@ -69,11 +70,13 @@ class WorkHospital:
                 self.registration(surname, name, age, profation)
 
             elif commands == 2:
+                if self.profation:
                     print("ОПЫТ РАБОТЫ")
                     salary_all = int(input("Введите опыт работы: "))
                     self.work_experience(salary_all)
+                else:
+                    print("Пройдите регистрацию")
                 
-                    print("Пройдите регистрацию! ")
             elif commands == 3:
                 print("ПОПОЛНЕНИЕ")
                 salary_all = int(input("Введите сумму: "))
@@ -85,13 +88,13 @@ class WorkHospital:
                     self.minus(salary_all)
 
             elif commands == 5:
-                break
+                break  
 
             else:
                 print("1 - Регистрация, 2 - Ввести опыт работы , 3 - Вывести деньги , 4 - выйти, 5 - выйти ")
                 commands = int(input("Выберите команду: "))
 
-work = WorkHospital()
+work = WorkHospital() 
 work.main()
 
 
@@ -112,5 +115,3 @@ work.main()
 
 
 
-# test = TEST()
-# test.work_experience()

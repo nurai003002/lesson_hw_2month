@@ -1,7 +1,7 @@
 
-from codes import fillings
-from abstract import dough1
-fillings()
+# from codes import fillings
+# from abstract import dough1
+# fillings()
 def ches():
     print("Вот и последний этап ")
     user = input("Добавьте сыр: ")
@@ -15,7 +15,7 @@ def last():
         choice = input("хотите приготовить еще? 'да', 'нет': ")
     elif choice == "да":
         print("dfg")       
-        dough1()
+        # dough1()
             
             
             

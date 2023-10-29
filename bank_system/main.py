@@ -1,4 +1,4 @@
-from .lesson_8 import *
+from lesson_8 import *
 
 
         

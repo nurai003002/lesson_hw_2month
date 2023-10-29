@@ -8,7 +8,7 @@
 #     def sim_cards(self):
 #         return self.__sim_cards
 #     @sim_cards.setter
-#     def sim_cards(self, new_sim_cards):
+#     def sim_cards(self, new_sim_cards):       
 #         self._sim_cards == new_sim_cards
 
 #     def __info_smartphone(self):
