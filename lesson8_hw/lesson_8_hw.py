@@ -32,7 +32,7 @@ class WorkHospital:
         self.age = age 
         self.profation = profation
         
-        cursor.execute(f""" INSERT INTO hospital  (profation,surname, name, age, experience , salary, is_active)
+        cursor.execute(f""" INSERT INTO hospital  (profation, surname, name, age, experience , salary, is_active)
                        VALUES (' {profation}', '{surname}','{name}','{age}', 0,0, True); """) 
         connect.commit()
 
