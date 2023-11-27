@@ -75,8 +75,8 @@
 # booing = Aircar("747",2000, 2000, 2)
 # booing.take_off()
 
-# дз 
-# № 1
+# # дз 
+# # № 1
 # class Fruits:
 #     def __init__ (self, name, color, weight):
 #         self.name = name
@@ -199,3 +199,5 @@
 # Cart = Car("Nissan", 2020, "dark-blue") 
 # Cart.refuel(40)
 # Cart.drive("Bishkek", 400)
+
+

@@ -23,7 +23,6 @@ def create_products(conn, product: tuple):
     sql = """INSERT INTO products
     (product_title, price, quantity)
     VALUES (?,?,?);
-
     """
 
     cursor = conn.cursor() 

@@ -70,24 +70,27 @@
 # дз 
 # №1,2,3,
 
-# class Computer:
-#     def __init__(self, cpu, memory, make_coputations):
-#         self.__cpu = cpu
-#         self.__memory = memory
-#         self.__make_coputations = make_coputations
-#     @property
-#     def cpu(self):
-#         return self.__cpu
-#     @property
-#     def memory(self):
-#         return self.__memory
-#     @property
-#     def make_coputations(self):
-#         print(f"сложение: {self.cpu + self.memory}, Деление : {self.cpu / self.memory}")
-#         print(f" Умножение: {self.cpu * self.memory}, Разность: {self.cpu-self.memory}")
-#         return self.__make_coputations
-# result = Computer(35,5,"Результат")
-# result.make_coputations
+class Computer:
+    def __init__(self, cpu, memory):
+        self.__cpu = cpu
+        self.__memory = memory
+
+    @property
+    def cpu(self):
+        return self.__cpu
+    @property
+    def memory(self):
+        return self.__memory
+    @property
+    def __make_coputations(self):
+        print(f"сложение: {self.cpu + self.memory}, Деление : {self.cpu / self.memory}")
+        print(f" Умножение: {self.cpu * self.memory}, Разность: {self.cpu-self.memory}")
+    @property
+    def make_coputations(self):
+        return self.__make_coputations
+    
+result = Computer(35,5)
+result.make_coputations
 
 # # №4,5,6,10
 # class Phone:

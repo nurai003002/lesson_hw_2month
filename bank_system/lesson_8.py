@@ -13,7 +13,7 @@ cursor.execute(""" CREATE TABLE IF NOT EXISTS customs (
                props VARGHAR (20) NOT NULL,
                is_active BOOLEAN DEFAUL FALSE
 
-)""")
+);""")
 
 class Bank:
     def __init__(self):

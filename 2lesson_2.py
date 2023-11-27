@@ -68,15 +68,15 @@
     
 # дз
 # №1,2
-# class Person:
-#     def __init__(self, fullname, age, is_married):
-#         self.fullname = fullname
-#         self.age = age
-#         self.is_married = is_married
-#     def introduce_myself(self):
-#       print(f"Имя - {self.fullname}, Возраст - {self.age}, Женат(а) - {self.is_married}")
-# inptroduce = Person("Нурай", 15, "Нет")
-# inptroduce.introduce_myself()
+class Person:
+    def __init__(self, fullname, age, is_married):
+        self.fullname = fullname
+        self.age = age
+        self.is_married = is_married
+    def introduce_myself(self):
+      print(f"Имя - {self.fullname}, Возраст - {self.age}, Женат(а) - {self.is_married}")
+inptroduce = Person("Нурай", 15, "Нет")
+inptroduce.introduce_myself()
   # №3,8
 # class Student(Person):
 #     def __init__(self, fullname, age, is_married):
@@ -96,23 +96,37 @@
 # result.total()
 
 
-# # №4,5,6,7
+# №4,5,6,7
 # class Teacher(Person):
-#     def __init__(self, fullname, age, is_married,experience,salary):
+#     def __init__(self, fullname, age, is_married,experience):
 #         Person.__init__(self, fullname, age, is_married)
 #         self.experience = experience
-#         self.salary = salary     
+#         self.salary = 30000    
 
 #     def sal(self):
 #         for i in range(self.experience):
 #             self.salary += 3000
 #         print(f"{self.fullname}, Ваша зарплата: {self.salary}")
-# result = Teacher("Нурай", 15, "Нет",3,30000)
+# result = Teacher("Нурай", 15, "Нет",3)
 # result.sal()
         
 
+    
+class Teacher(Person):
+    def __init__(self, fullname, age, is_married, experience):
+      Person.__init__(self, fullname, age, is_married)
+      self.experience = experience
+      self.salary = 300000
 
+    def sum_salary(self):
+        for i in range(self.experience):
+           self.salary += 3000
+        print(f"{self.fullname}, Ваша зарплата: {self.salary}")
+result = Teacher("Темирбаева Нурай", 15, "нет", 3)
+result.sum_salary()
+      
 
+    
         
 
 
